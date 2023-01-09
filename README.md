@@ -2,8 +2,7 @@
 This project aims at showing use cases where a DevOps mindset is bringing value to a software project by automating it, which decreases the amount of manual work and increases the development speed. It focuses on why automation is useful and helps speeding a development lifecycle.
 
 
-Concepts
-You should have a basic knowledge of the following concepts:
+CONCEPTS
 
 Shell terminal basics, using command lines:
 
@@ -32,11 +31,7 @@ A shell terminal with bash, zsh or ksh, including the standard Unix toolset (ls,
 GNU Make in version 3.81+
 Git (command line) in version 2+
 Go Hugo v0.80+
-The student needs to be able to spawn up a clean Ubuntu 18.04 system. Therefore Docker is recommended with NO prior knowledge.
+i need to be able to spawn up a clean Ubuntu 18.04 system. Therefore Docker is recommended with NO prior knowledge.
 A text editor or IDE (Integrated Development Editor) of your convenience (Visual Code, Notepad++, Vim, Emacs, IntelliJ, etc.)
 Story
 Congratulations!
-
-It’s your first day at “Awesome Inc.” as a software engineer. This company is currently experiencing fast growth and hired you to work on their web services.
-
-Your predecessor left to travel the world, and the expectations are high on your ability to help "Awesome Inc.” to grow a culture of collaboration with a technical mindset, while managing their existing web services. That’s exactly what DevOps is about!
