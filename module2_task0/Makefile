@@ -1,5 +1,5 @@
 build: ## compile source code to a binary
-	go mod init github.com/bbrown585/awesome-api
+	go mod init github.com/fmamah777/awesome-api
 	go build
 
 run: ## Run the app in the background and write the logs
@@ -16,5 +16,6 @@ test: ## test for functionality
 	curl http://localhost:9999
 	curl http://localhost:9999/health
 Silent: ## test for functionality
+
 help: ## Print a list of all the goals with a sentence.
 	sed -n '1p;5p;8p;15p;18p;p' Makefile | grep "##" | tr -d "##"
