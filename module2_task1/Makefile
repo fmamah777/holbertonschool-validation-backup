@@ -1,5 +1,5 @@
 lint: ## Bad code
-	golangci-lint run
+	golangci-lint run >/dev/null 2>&1 && echo "OK" || echo "ERROR"
 
 build: ## compile source code to a binary
 	go mod init github.com/fmamah777/awesome-api
