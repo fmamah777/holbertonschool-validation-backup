@@ -1,10 +1,10 @@
 lint: ## Bad code
-	golangci-lint run >/dev/null 2>&1 && echo "OK" || echo "ERROR"
+	golangci-lint run 
 
 build: ## compile source code to a binary
 	go mod init github.com/fmamah777/awesome-api
 	go get github.com/gorilla/mux
-	make lint
+	make lint >/dev/null 2>&1
 	go build
 
 run: ## Run the app in the background and write the logs
