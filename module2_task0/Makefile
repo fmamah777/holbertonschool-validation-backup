@@ -1,5 +1,6 @@
 build: ## compile source code to a binary
 	go mod init github.com/fmamah777/awesome-api
+	go get github.com/gorilla/mux
 	go build
 
 run: ## Run the app in the background and write the logs
