@@ -14,6 +14,7 @@ stop: ## stop the app
 	pgrep awesome-api | xargs kill
 
 clean: ## delete the binary awesome-api
+	make stop
 	rm -rf ./awesome-api | rm -rf awesome.log
 	pgrep awesome-api | xargs kill
 
