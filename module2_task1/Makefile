@@ -1,4 +1,4 @@
-lint: # Bad code
+lint: ## Bad code
 	golangci-lint run
 
 build: ## compile source code to a binary
