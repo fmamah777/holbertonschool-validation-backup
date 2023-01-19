@@ -1,5 +1,5 @@
 lint: ## Bad code
-	go get github.com/gorilla/mux
+	go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 	golangci-lint run
 
 build: ## compile source code to a binary
