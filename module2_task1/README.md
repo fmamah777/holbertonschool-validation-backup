@@ -10,6 +10,7 @@
 
 ## Lifecycle
 
+- lint
 - build
 - clean
 - post
