@@ -1,10 +1,10 @@
 lint: ## Bad code
-	golangci-lint run 
+	golangci-lint run  && echo "OK" || echo "ERROR"
 
 build: ## compile source code to a binary
-	make lint >/dev/null 2>&1
 	go mod init github.com/fmamah777/awesome-api
 	go get github.com/gorilla/mux
+	make lint
 	go build
 
 run: ## Run the app in the background and write the logs
@@ -14,7 +14,6 @@ stop: ## stop the app
 	pgrep awesome-api | xargs kill
 
 clean: ## delete the binary awesome-api
-	make stop
 	rm -rf ./awesome-api | rm -rf awesome.log
 	pgrep awesome-api | xargs kill
 
