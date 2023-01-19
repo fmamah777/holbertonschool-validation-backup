@@ -1,10 +1,8 @@
-lint: ## Bad code
-	golangci-lint run  && echo "OK" || echo "ERROR"
+lint: ## lint the file
+	golangci-lint run
 
-build: ## compile source code to a binary
-	go mod init github.com/fmamah777/awesome-api
-	go get github.com/gorilla/mux
-	make lint
+build: ## compile source code and build site
+	make lint >/dev/null 2>&1 && go mod init github.com/fmamah777/awesome-api
 	go build
 
 run: ## Run the app in the background and write the logs
@@ -13,14 +11,14 @@ run: ## Run the app in the background and write the logs
 stop: ## stop the app
 	@kill "$(shell pgrep awesome-api)" 2>/dev/null &
 
-clean: ## delete the binary awesome-api
-	rm -rf ./awesome-api | rm -rf awesome.log
-	pgrep awesome-api | xargs kill
+clean: ## delete the binary awesome-api and stop all processes
+	make stop
+	rm -rf awesome-api
+	rm awesome.log >/dev/null 2>&1 &
 
 test: ## test for functionality
-	curl http://localhost:9999
+	curl http://localhost:9999 
 	curl http://localhost:9999/health
-Silent: ## test for functionality
 
 help: ## Print a list of all the goals with a sentence.
-	sed -n '1p;5p;8p;15p;18p;p' Makefile | grep "##" | tr -d "##"
+	sed -n '1p;4p;8p;11p;14p;19p;23p' Makefile | grep "##" | tr -d "##"
