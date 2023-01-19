@@ -1,4 +1,4 @@
-module github.com/bbrown585/awesome-api
+module github.com/fmamah777/awesome-api
 
 go 1.19
 
