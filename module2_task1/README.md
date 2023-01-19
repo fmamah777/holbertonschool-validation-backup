@@ -10,11 +10,10 @@
 
 ## Lifecycle
 
-- lint
 - build
-- clean
-- post
-- help
 - run
-- test
-- stop
+- stop 
+- clean
+- test 
+- lint
+- help 
