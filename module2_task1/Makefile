@@ -2,6 +2,7 @@ lint: ## Bad code
 	golangci-lint run
 
 build: ## compile source code to a binary
+	make lint
 	go mod init github.com/fmamah777/awesome-api
 	go get github.com/gorilla/mux
 	go build
