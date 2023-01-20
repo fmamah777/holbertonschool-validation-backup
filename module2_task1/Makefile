@@ -2,7 +2,7 @@ lint: ## lint the file
 	golangci-lint run
 
 build: ## compile source code and build site
-	make lint >/dev/null 2>&1 && go mod init github.com/fmamah777/awesome-api
+	make lint >/dev/null 2>&1 && go mod init github.com/bbrowfmamah777n585/awesome-api
 	go build
 
 run: ## Run the app in the background and write the logs
