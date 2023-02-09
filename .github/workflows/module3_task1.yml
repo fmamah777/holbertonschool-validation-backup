@@ -1,6 +1,6 @@
 ---
 name: module3_task1
-on:
+"on":
   push:
     branches:
       - main
