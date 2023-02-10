@@ -24,7 +24,7 @@ integration-tests: ## server and check the localhost
 	ls dist/
 
 unit-tests: ## Runs different makefile recipes
-	make POST_TITLE='TEST' POST_NAME='this-is-a-test' post
+	make make POST_TITLE='Test Title' POST_NAME='Test-name' post
 	make build
 	make clean
 
