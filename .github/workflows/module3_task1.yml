@@ -28,7 +28,7 @@ jobs:
       - name: post
         run: |
           cd module3_task1/
-          make POST_TITLE=“Test Title” POST_NAME=“Test-name” post
+          make POST_TITLE='Test Title' POST_NAME='Test-name' post
       - name: Integration tests
         run: |
           cd module3_task1/
